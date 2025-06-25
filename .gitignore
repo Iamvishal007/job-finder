@@ -1,0 +1,37 @@
+# Gitignore for a full-stack Go and React/TypeScript project
+
+# --- Go Backend ---
+/backend/bin/
+/backend/*.exe
+/backend/*.dll
+/backend/*.so
+/backend/*.dylib
+/backend/*.test
+/backend/vendor/
+/backend/.idea/         # GoLand / IntelliJ IDE files
+/backend/.vscode/       # VS Code IDE files (if specific to backend, otherwise global)
+/backend/.env           # Local environment variables for backend
+
+# Go build cache
+/backend/.go/
+
+# Test binaries
+/*.test
+/*.out
+
+# --- Frontend (React/Vite) ---
+/frontend/node_modules
+/frontend/dist          # Vite build output
+/frontend/.env          # Local environment variables for frontend
+/frontend/.env.local    # Specific to Create React App, but good to include
+/frontend/.vite/        # Vite cache directory
+/frontend/.vscode/      # VS Code IDE files (if specific to frontend, otherwise global)
+
+# Misc
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vscode/        # Global VS Code settings (if not already ignored in sub-folders)
+*.env           # Catch any .env files anywhere (careful with this if you have other uses)
