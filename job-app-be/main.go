@@ -15,6 +15,6 @@ func main() {
 	log.Println("Go server starting on port 8080...")
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
-		log.Fatal("Server failed ot start: %v", err)
+		log.Fatalf("Server failed to start: %v", err)
 	}
 }
